@@ -1,0 +1,77 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "wxc97b6af6fc74b079",
+	"projectname": "%E5%85%B1%E4%BA%AB%E5%8D%95%E8%BD%A6ofo%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "scanCode",
+					"pathName": "projects/scanCode/scanCode",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "billing",
+					"pathName": "projects/billing/billing",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "warn",
+					"pathName": "projects/warn/warn",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "projects/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "wallet",
+					"pathName": "projects/wallet/wallet",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "charge",
+					"pathName": "projects/charge/charge",
+					"query": ""
+				}
+			]
+		}
+	}
+}

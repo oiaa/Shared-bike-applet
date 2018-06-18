@@ -1,0 +1,33 @@
+<!--projects/warn/warn.wxml-->
+<view class='container'>
+  <view class='choose'>
+    <view class='title'>请选择故障类型 </view>
+    <checkbox-group bindchange="bindchange">
+        <block wx:for="{{checkboxValue}}" wx:key="{{index}}">
+          <view class='check'>
+            <checkbox value='{{item.title}}'></checkbox>{{item.title}}
+          </view>
+        </block>
+    </checkbox-group>
+  </view>
+  <view class='actions'>
+    <view class='title'>
+      拍摄僵尸周围环境，便于维修找僵尸
+    </view>
+    <view class='action-pics'>
+      <block wx:for="{{imgsUrl}}" wx:key="{{index}}">
+        <image src='{{item}}'>
+          <icon type='cancel' size='16' bindtap='del' data-id="{{index}}"></icon>
+        </image>
+      </block>
+      <text class='add' bindtap='takePhoto'>{{text}}</text>
+    </view>
+    <view class='actions-input'>
+        <input placeholder='车牌' bindinput='changenum'></input>
+        <input placeholder='备注' bindinput='changeDes'></input>
+    </view>
+    <view class='submit'>
+        <button type='primary' style='background-color:{{color}}' bindtap='submit'>提交</button>
+    </view>
+  </view>
+</view>
